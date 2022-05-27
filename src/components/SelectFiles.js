@@ -10,7 +10,7 @@ const SelectFiles = (props) => {
     const getFileList = async () => {
 
         try{
-          const result = (await AxiosInstance.get("/files/data/")).data
+          const result = (await AxiosInstance.get("/files/list/")).data
           setFileList(result.data)
         }catch{
             console.log('Error de Conexion')
