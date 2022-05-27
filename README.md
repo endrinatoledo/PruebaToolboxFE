@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# FE Prueba Toolbox
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. Introducción.
 
-## Available Scripts
+ Este repositorio contiene el FE de la prueba de Toolbox
+ desarrollado en ReactJs.Direccion de repositorio:
+ **https://github.com/endrinatoledo/PruebaToolboxFE.git** 
 
-In the project directory, you can run:
+## 2. Funcionalidad.
 
-### `npm start`
+ Este repositoio se encarga de consumir el API  **PruebaToolboXBE**
+ Mostrando la data obtenida en una tabla mediante un filtro
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 3. Tipos de conexión.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- La aplicacion levanta bajo la dirección **http://localhost:3000**.
+- Las rutas para metodos "GET" en el servidor virtual son:
+  - Ruta "/files/list/".
+      - Retorna en formato de JSON los nombres de los "file".
+  - Ruta "/data/:filename/".
+      - Retorna en formato de JSON los registros asociados al nombre
+      del archivo enviado por parámetro".
 
-### `npm test`
+## 4. Generalidades sobre la implementación.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Esta aplicacion ha sido desarrollada con Node.js usando los siguientes modulos:
+  - axios
+  - bootstrap
+  - react
+  - react-bootstrap
+  - react-dom
+  - react-scripts
+  - web-vitals
 
-### `npm run build`
+- Arbol de la aplicación:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+	```
+    back-end
+    │   README.md
+    │   package.json   
+    │   package-lock.json   
+    │   gitignore
+    └───public
+    └───src
+    │   └───components
+    │   └───utils
+    ```
+### 5. Prerrequisitos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Se deben tener configurados el siguiente entorno:**	
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- NodeJS 14
 
-### `npm run eject`
+### 6. Instalar Dependencias.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+En esta sección desde el terminal de su preferencia se debe
+navegar a dentro de la carpeta PruebaToolboxBE y ejecutar el
+comando: 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**npm install**	
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 7. Ejecución de la app.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Una vez finalizada la instalacion de dependencias se procede ejecutar la
+aplicación mediante el comando:
 
-## Learn More
+**npm start**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ Una vez desplegado, se abrirá una pestaña en su navegador con 
+ baseUrl **http://localhost:3000** la cual mostrará la aplicación
